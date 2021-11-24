@@ -603,7 +603,8 @@ class User(SchemaTable):
 					substr(characters, (random() * length(characters) + 1)::integer, 10),
 					substr(characters, (random() * length(characters) + 1)::integer, 10)
 				FROM
-					(VALUES('qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM')) as symbols(characters);
+					(VALUES('qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM')) as symbols(characters),
+					generate_series(1, {instances});
 					
 
 

@@ -71,43 +71,7 @@ class Controller(object):
 		return result
 
 
-# f'"Authors" table': lambda: Lab.utils.LabConsoleInterface({
-# 	f"describe": self.schema.tables.Authors.describe,
-# 	f"show data": self.schema.tables.Authors.showData,
-# 	f"add data": self.schema.tables.Authors.addData,
-# 	f"edit data": self.schema.tables.Authors.editData,
-# 	f"remove data": self.schema.tables.Authors.removeData,
-# 	f"random fill": self.schema.tables.Authors.randomFill,
-# 	f"return": lambda: Lab.utils.menuReturn(f"User menu return"),
-# }, promt=self.schema[f"Authors"].promt),
 
-# f"Books": lambda: Lab.utils.LabConsoleInterface({
-# 	# f"Author": lambda: self.schema.dynamicsearch[0].search[f"Author"],
-# 	f"Author": lambda: Lab.utils.LabConsoleInterfaceDynamicUpdate(lambda: Lab.utils.LabConsoleInterface({
-# 		**{f"Property {a} {b}": (lambda x: lambda: x)(Lab.utils.LabConsoleInterfaceDynamicUpdate(lambda: Lab.utils.LabConsoleInterface({
-# 			f"ignore": b.reset,
-# 			f"<": b._lt,
-# 			f"<=": b._le,
-# 			f"=": b._eq,
-# 			f"!=": b._ne,
-# 			f">=": b._ge,
-# 			f">": b._gt,
-# 			f"LIKE": b._like,
-# 			f"set NULL": b.setNull,
-# 			f"set constant": b.setConstant,
-# 			f"return": lambda: Lab.utils.menuReturn(f"User menu return"),
-# 		}, promt=b.promt))) for a, b in enumerate(self.schema.dynamicsearch[f"Books"].search[f"Author"].search_criterias.append(), 1)},
-# 		f"return": lambda: Lab.utils.menuReturn(f"User menu return"),
-# 	}, promt=self.schema.dynamicsearch[f"Books"].search[f"Author"].promt)),
-# 	f"execute": self.schema.dynamicsearch[f"Books"].execute,
-# 	f"sql": lambda: print(self.schema.dynamicsearch[f"Books"].sql),
-# 	f"reset": self.schema.dynamicsearch[f"Books"].reset,
-# 	f"return": lambda: Lab.utils.menuReturn(f"User menu return"),
-# }, promt=self.schema.dynamicsearch[f"Books"].promt),
-
-# lambda: Lab.utils.LabConsoleInterface({
-# f"return": lambda: Lab.utils.menuReturn(f"User menu return"),
-# }, promt=f""),
 
 def _test() -> None:
 	pass
